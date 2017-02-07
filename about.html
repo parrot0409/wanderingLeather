@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="menuNfooter.css">
+	<title>Wandering_about</title>
+	<style>
+		*{
+			/*outline:1px solid #f00;*/
+		}
+		.row1{
+			position:relative;
+			width: 100%;	
+		}
+		.row1:after{
+			content:'';
+			position:relative;
+			display:block;
+			width: 85%;
+			height: 2px;
+			background: #ddd;
+			margin: auto;
+			bottom:40px;
+			z-index:1;
+		}
+		.row1_txt{
+			position:relative;
+			width: 60%;
+			margin: 20% 0%  0%  20%;
+			float:left;
+		}
+		.row1_txt h2{
+			width: 110%;
+			font-size:28px;
+			color:#714327;
+		}
+		.row1_txt h2:last-child{
+			margin-top: 5%;
+			margin-left: 10%;
+		}
+		.row1_img{
+			position:relative;
+			width: 40%;
+			margin: 0% 8% 0% 0;
+			float:right;
+			z-index:5;
+		}
+		.row1_img img{
+			width: 100%;
+		}
+		.row2row{
+			position:relative;
+			width: 100%;
+		}
+		.row2row h2{
+			color:#798;
+		}
+		.row2row p{
+			color:#555;
+		}
+		.row2{
+			position:relative;
+			background: url(images/symphony.png) repeat;
+			margin-top: 10%;
+			padding: 8% 0 2% 0;
+			box-sizing:border-box;
+		}
+		
+		.row2 > h2{
+			position:absolute;
+			width: 20%;
+			top: -3%;
+			left: 6%;
+			background: #3f3d51;
+			text-align:center;
+			color:#eee;
+			font-size:22px;
+			padding: 6px 0;
+		}
+		
+		.row2 > h2:before{
+			content:'';
+			display:block;
+			position:absolute;
+			width: 5%;
+			top: 0;
+			height: 0px;
+			border-left: 10px solid transparent;
+			border-top: 21px solid #3f3d51;
+			border-bottom: 21px solid #3f3d51; 
+			left: -10%;
+		}
+		.row2row div{
+			position:relative;
+			width: 45%;
+			float:left;
+			left: 5%;
+			box-sizing:border-box;
+		}
+		.row2row img{
+			width: 100%;
+		}
+		.leather, .zipper{
+			padding: 0 6% 3% 12%;
+		}
+		.line, .buttom{
+			padding: 0 12% 3% 6%;
+		}
+		.row3{
+			position:relative;
+			width: 100%;
+			margin: 10% 0 6% 0;
+			padding-top: 6%;
+		}
+		.row3_txt{
+			position:relative;
+			width: 70%;
+			margin: 3% auto 10% 25%;
+		}
+		.row3_txt h2{
+			font-size:22px;
+			margin: 2% 0;
+			color:#714327;
+		}
+		.row3_img{
+			width: 90%;
+			margin: 4% auto 0 auto;
+		}
+		.row3_img img{
+			width: 100%;
+		}
+		.row3 > h2{
+			position:absolute;
+			width: 20%;
+			top: -3%;
+			left: 6%;
+			background: #3f3d51;
+			text-align:center;
+			color:#eee;
+			font-size:22px;
+			padding: 6px 0;
+		}
+		
+		.row3 > h2:before{
+			content:'';
+			display:block;
+			position:absolute;
+			width: 5%;
+			top: 0;
+			height: 0px;
+			border-left: 10px solid transparent;
+			border-top: 21px solid #3f3d51;
+			border-bottom: 21px solid #3f3d51; 
+			left: -10%;
+		}
+		@media (max-width: 767px){
+			.row1_txt{
+				width: 80%;
+				margin-left: 15%;
+				margin-bottom: 2%;
+			}
+			.row1_txt h2{
+				width: 95%;
+				font-size:14px;
+			}
+			.row1:after{
+				bottom: 20px;
+			}
+			.row2{
+				margin-top: 16%;
+				padding: 14% 0;
+			}
+			.row2 > h2, .row3 >h2{
+				width: 40%;
+				left: 30%;
+				right: 30%;
+				top: -1%;	
+				font-size:15px;
+			}
+			.row2 > h2:before, .row3 > h2:before{
+				left: -13%;
+				width: 10%;
+				border-right: 10px solid transparent;
+				border-top: 16px solid #3f3d51;
+				border-bottom: 16px solid #3f3d51; 
+
+			}
+			.row2 > h2:after, .row3 > h2:after{
+				content:'';
+				display:block;
+				position:absolute;
+				width: 10%;
+				top: 0;
+				height: 0px;
+				border-right: 10px solid transparent;
+				border-top: 16px solid #3f3d51;
+				border-bottom: 16px solid #3f3d51;
+				right: -13%;
+			}
+			.row2row{
+				width: 80%;
+			}
+			.row2row > div:nth-of-type(n+2){
+				margin-top: 6%;
+			}
+			.row2 div{
+				width: 85%;
+				padding: 0;
+				margin: auto;
+				left: 0;
+				float:none;
+			}
+			.row3_txt{
+				margin: 10% auto 6% auto;
+				width: 90%;
+			}
+			.row3_txt h2{
+				font-size:14px;
+			}
+
+		}
+		@media (min-width: 768px){
+			
+		}
+		@media (min-width: 1024px){
+
+		}
+	</style>
+</head>
+<body>
+	<div class="contain">
+		<div class="empty"></div>
+		<input type="checkbox" name="" id="menu-btn">
+		<div class="header">
+			<div class="logo"><a href="index.html"><img src="images/logo.png" alt=""></a></div>
+			<div class="hb"><label for="menu-btn"><i class="fa fa-bars"></i></label></div>
+			<ul class="menu_bag">
+				<li><a href="duffles.html">行李袋</a></li>
+				<li><a href="totes.html">托特包</a></li>
+				<li><a href="messenger.html">公事包</a></li>
+				<li><a href="backpacks.html">後背包</a></li>
+				<li><a href="about.html">品牌特色</a></li>
+				<li><a href="contact.html">聯絡我們</a></li>
+			</ul>
+			<ul class="menu_info">
+				<li class="nowAt"><a href="about.html">品牌特色</a></li>
+				<li><a href="contact.html">聯絡我們</a></li>
+			</ul>
+			<div class="orangebar"></div>
+		</div>
+		<div class="row1 clearfix">	
+			<div class="row1_txt">
+				<h2><span style='font-family: zonapro-bold'>Wandering</span>提供您最高品質的背包，</h2>
+				<h2>快來看看我們與眾不同之處吧!</h2>
+			</div>
+			<div class="row1_img">
+				<img src="images/about_row1.png" alt="">
+			</div>
+		</div>
+
+
+		<div class="row2 clearfix">
+			<h2>嚴選素材</h2>
+			<div class="row2row clearfix">
+				<div class="leather">
+					<img src="images/about_leather.jpg" alt="">
+					<h2>皮革</h2>
+					<p>堅持選用最優質的義大利A+級皮革，我們相信只有最好的皮革，才能製出最好的包包。</p>
+				</div>
+				<div class="line">
+					<img src="images/about_line.jpg" alt="">
+					<h2>縫線</h2>
+					<p>所有產品皆使用日本橋印麻線縫製，堅韌耐摩擦，染色自然且色澤光亮。</p>
+				</div>
+			</div>
+			<div class="row2row clearfix">
+				<div class="zipper">
+					<img src="images/about_zipper.jpg" alt="">
+					<h2>拉鍊</h2>
+					<p>我們使用美國UCAN拉鍊，使用手感極佳且壽命長，讓您有最棒的使用體驗。</p>
+				</div>
+				<div class="buttom">
+					<img src="images/about_button.jpg" alt="">
+					<h2>鈕扣</h2>
+					<p>我們只使用純銅鈕扣，不易氧化且經過使用色澤會更加溫潤，非常適合與皮革做搭配。</p>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="row3 clearfix">
+			<h2>為戶外設計</h2>
+			<div class="row3_txt">
+				<h2>我們致力於研發適合旅行的產品，</h2>
+				<h2>不同的款式能夠滿足不同的需求，</h2>
+				<h2>相同的是我們對皮革的熱愛和品質的堅持!</h2>
+			</div>
+			<div class="row3_img">
+				<img src="images/about_row3.jpg" alt="">
+			</div>
+		</div>
+
+		<div class="footer clearfix">
+			<div class="footer_bag">
+				<ul>
+					<li><a href="duffles.html">行李袋</a></li>
+					<li><a href="totes.html">托特包</a></li>
+					<li><a href="messenger.html">公事包</a></li>
+					<li><a href="backpacks.html">後背包</a></li>
+				</ul>
+			</div>
+			
+			<div class="footer_info">
+				<ul>
+					<li><a href="contact.html">聯絡我們</a></li>
+					<li><a href="about.html">品牌特色</a></li>
+					<li><a href="service.html">售後服務</a></li>
+					<li><a href="index.html">最新消息</a></li>
+				</ul>
+			</div>
+
+			<div class="social">
+				<p>社群連結</p>
+				<ul>
+					<li><a href="http://facebook.com" target="_blank"><img src="images/facebook.png" alt=""></a></li>
+					<li><a href="http://twitter.com" target="_blank"><img src="images/twitter.png" alt=""></a></li>
+					<li><a href="http://google.com" target="_blank"><img src="images/google.png" alt=""></a></li>
+					<li><a href="http://instagram.com" target="_blank"><img src="images/ig.png" alt=""></a></li>
+				</ul>
+			</div>
+			<p class="copy_right">Copyright © XXX Design | Hosted by XXX</p>
+		</div>
+	</div>
+</body>
+</html>

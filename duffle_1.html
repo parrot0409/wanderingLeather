@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="menuNfooter.css">
+	
+	<title>D150001</title>
+	<style>
+		.row1{
+			position:relative;
+			width: 100%;
+			background: url(images/duffle_1_row1.jpg) no-repeat center center;
+			padding-bottom: 46.3749%;
+			background-size:cover;
+			
+		}
+		.row1_txt{
+			position:absolute;
+			width: 20%;
+			top: 50%;
+			left: 10%;
+			text-align:center;
+			font-family:zonapro-bold;
+		}
+		.left{
+			position:absolute;
+			width: 8%;
+			height: 100%;
+			background: #eee;
+			left: -15%;
+		}
+		.left:before{
+			content:'';
+			position:absolute;
+			width: 225%;
+			height: 15%;
+			background: #eee;
+			top: -15%;
+			left: 0%;
+		}
+		.left:after{
+			content:'';
+			position:absolute;
+			width: 225%;
+			height: 15%;
+			background: #eee;
+			bottom: -15%;
+			left: 0%;
+		}
+		.right{
+			position:absolute;
+			width: 8%;
+			height: 100%;
+			background: #eee;
+			right: -15%;
+			top: 0;
+		}
+		.right:before{
+			content:'';
+			position:absolute;
+			width: 225%;
+			height: 15%;
+			background: #eee;
+			top: -15%;
+			right: 0%;
+		}
+		.right:after{
+			content:'';
+			position:absolute;
+			width: 225%;
+			height: 15%;
+			background: #eee;
+			bottom: -15%;
+			right: 0%;
+		}
+		.row1 h1{
+			font-size:50px;
+			color:#f00;
+		}
+		.row1 p{
+			font-size:20px;
+		}
+		.row2{
+			position:relative;
+			width: 100%;
+			padding: 14% 0;
+		}
+		.row2_bigImg{
+			width: 40%;
+			height: 300px;
+			position:relative;
+			float:left;
+			/*background: #555;*/
+			/*margin: 10% 0;*/
+			box-sizing:border-box;
+			/*padding: 20% 0;*/
+			left: 35%;
+			overflow:hidden;
+		}
+		.bigImg{
+			width: 5000px;
+			height: 100%;
+			position:relative;
+			/*clear:both;*/
+		}
+		.bigImg img:nth-of-type(1){
+			position:relative;
+			height: 100%;
+			display:inline-block;
+		}
+		.bigImg img:nth-of-type(2){
+			position:relative;
+			height: 100%;
+			display:inline-block;
+
+		}
+		.bigImg img:nth-of-type(3){
+			position:relative;
+			height: 100%;
+			display:inline-block;
+		}
+		.row2 input{
+			display:none;
+		}
+		#select1:checked ~ .row2_bigImg .bigImg{
+			left: 0%;
+			transition:.3s;
+		}
+		#select2:checked ~ .row2_bigImg .bigImg{
+			left: -100%;
+			transition:.3s;
+		}
+		#select3:checked ~ .row2_bigImg .bigImg{
+			left: -200%;
+			transition:.3s;
+		}
+		.row2_txt{
+			position:relative;
+			width: 16%;
+			margin: 0% 0 0% 10%;
+			box-sizing:border-box;
+			left: -40%;
+
+		}
+		.row2_txt:before{
+			content:'';
+			position:absolute;
+			display:block;
+			width: 15%;
+			height: 91%;
+			background: #535353;
+			left: -55%;
+			top: 5%;
+		}
+		.row2 h2{
+			font-size:34px;
+		}
+		.row2 p{
+			color:#344c31;
+			padding-left: 5%;
+			line-height:24px;
+			font-size:14px;
+			box-sizing:border-box;
+		}
+		.row2 p:first-of-type{
+			line-height:14px;
+			font-size:14px;
+			color:#999;
+			margin-bottom: 5%;
+			margin-top: 3%;
+			padding: 0;
+		}
+		.row2 p:last-of-type{
+			color:#999;
+			margin-top: 10%;
+			padding: 0;
+			line-height:20px;
+		}
+		.row2_smallImg{
+			position:relative;
+			width: 10%;
+			float:right;
+			margin: 0% 5% 0% 0;
+			right: 0;
+			
+		}
+		.row2_smallImg:before{
+			content:'';
+			position:absolute;
+			width: 100%;
+			height: 5%;
+			background: #535353;
+			top: -10%;
+		}
+		.row2_smallImg:after{
+			content:'';
+			position:absolute;
+			width: 100%;
+			height: 5%;
+			background: #535353;
+			bottom: -10%;
+		}
+		.row2_smallImg img{
+			width: 100%;
+		}
+
+
+
+		
+
+
+		.row3{
+			position:relative;
+			width: 100%;
+			display:block;
+		}
+		.row3row{
+			width: 100%;
+			position:relative;
+		}
+		.nail{
+			width: 45%;
+			margin-left: 3%;
+			margin-bottom: 3%;
+			float:left;
+			border:1px solid #aaa;
+			padding: .3%;
+			box-sizing:border-box;
+		}
+		.nail div{
+			float:left;
+		}
+		.nail_img{
+			width: 50%;
+		}
+		.nail img{
+			width: 100%;
+		}
+		.nail_txt{
+			width: 45%;
+			padding: 10% 0 10% 4%;
+			box-sizing:border-box;
+		}
+		.nail_txt h2{
+			font-size:20px;
+			margin-bottom: 5%;
+
+		}
+		
+		@media (max-width: 767px){
+			.row1_txt{
+				left: 8%;	
+				width: 35%;	
+			}
+			.row1 h1{
+				font-size:24px;
+			}
+			.row1 p{
+				font-size:14px;
+			}
+			.left{
+				left: 0%;					
+				width: 5%;	
+			}
+			.right{
+				right: 0%;	
+				width: 5%;	
+			}
+			.row2_txt{
+				width: 80%;
+				text-align:center;
+				left: 0;	
+				margin: auto;
+				float:none;
+			}
+			.row2_txt:before{
+				display:none;
+			}
+			.row2_txt p{
+				width: 50%;	
+				margin: auto;
+				text-align:left;
+			}
+			.row2_txt p:first-of-type{
+				text-align:center;
+				margin: 0 auto 2% auto;	
+			}
+			.row2_txt p:last-of-type{
+				text-align:center;
+				margin: 3% auto;	
+			}
+			.row2{
+				padding: 3% 0;
+			}
+			.row2_bigImg{
+				width: 80%;
+				height: 220px;
+				margin: 5% 0 0 0;
+				padding: 0 ;	
+				left: 10%;
+				display:block;
+				float:none;
+			}
+			.bigImg{
+				left: 5%;
+
+			}
+			.bigImg img:nth-of-type(1){
+				position:relative;
+				height: 100%;
+				display:inline-block;
+			}
+			.bigImg img:nth-of-type(2){
+				position:relative;
+				height: 100%;
+				display:inline-block;
+			}
+			.bigImg img:nth-of-type(3){
+				position:relative;
+				height: 100%;
+				display:inline-block;
+			}
+			#select1:checked ~ .row2_bigImg .bigImg{
+				left: 5%;
+				transition:.3s;
+				}
+			#select2:checked ~ .row2_bigImg .bigImg{
+				left: -88%;
+				transition:.3s;
+			}
+			#select3:checked ~ .row2_bigImg .bigImg{
+				left: -180%;
+				transition:.3s;
+			}
+			.row2_smallImg{
+				width: 100%;
+				float:none;
+				margin: 5% 0;
+				padding: 0 10% 0 16%;
+				box-sizing:border-box;
+			}
+			.row2_smallImg img{
+				width: 30%;
+			}
+			.row2_smallImg img:nth-of-type(n+2){
+				margin-left: 5%;	
+			}
+			.row2_smallImg:before{
+				width: 80%;
+				left: 10%;
+			}
+			.row2_smallImg:after{
+				width: 80%;
+				left: 10%;	
+			}
+			.row2_txt{
+				margin-top: 10%;
+			}
+			.row3{
+				margin: 5% 0;	
+			}
+			.nail_img{
+				width: 100%;	
+			}
+			.nail_txt{
+				width: 100%;	
+				margin: 3% 0;	
+				text-align:center;
+			}
+			.nail h2{
+				font-size:18px;
+				margin: 0 0 1% 0;	
+			}
+			.nail p{
+				font-size:14px;
+			}
+			.nail_img img{
+				width: 100%;	
+			}
+
+		}
+		@media (min-width: 768px){
+			.row2_txt{
+				width: 18%;
+				float:left;
+			}
+			.row2_txt p{
+				font-size:14px;
+			}
+			.left{
+				left: -25%;	
+			}
+			.right{
+				right: -25%;	
+			}
+		}
+		@media (min-width: 1024px){
+			.row2_txt{
+				width: 18%;
+				float:left;
+			}
+			.left{
+				left: -20%;	
+			}
+			.right{
+				right: -20%;	
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="contain">
+		
+		<input type="checkbox" name="" id="menu-btn">
+		<div class="header">
+			<div class="logo"><a href="index.html"><img src="images/logo.png" alt=""></a></div>
+			<div class="hb"><label for="menu-btn"><i class="fa fa-bars"></i></label></div>
+			<ul class="menu_bag">
+				<li class="nowAt"><a href="duffles.html">行李袋</a></li>
+				<li><a href="totes.html">托特包</a></li>
+				<li><a href="messenger.html">公事包</a></li>
+				<li><a href="backpacks.html">後背包</a></li>
+				<li><a href="about.html">品牌特色</a></li>
+				<li><a href="contact.html">聯絡我們</a></li>
+			</ul>
+			<ul class="menu_info">
+				<li><a href="about.html">品牌特色</a></li>
+				<li><a href="contact.html">聯絡我們</a></li>
+			</ul>
+			<div class="orangebar"></div>
+		</div>
+
+		<div class="empty"></div>
+		
+		<div class="row1 clearfix">
+			<div class="row1_txt">
+				<div class="left"></div>
+				<h1>D16001</h1>
+				<p style="font-family: zonapro-bold">18,000 N.T</p>
+				<div class="right"></div>
+			</div>
+		</div>
+
+		<div class="row2 clearfix">
+			<input type="radio" id="select2" name="select">
+			<input type="radio" id="select1" name="select">
+			<input type="radio" id="select3" name="select">
+			<div class="row2_bigImg">
+				<div class="bigImg">
+					<img src="images/duffle01-2.jpg" alt="">
+					<img src="images/duffle01-1.jpg" alt="">
+					<img src="images/duffle01-3.jpg" alt="">
+				</div>
+			</div>
+			<div class="row2_smallImg">
+				<label for="select1"><img src="images/duffle01-2.jpg" alt=""></label>
+				<label for="select2"><img src="images/duffle01-1.jpg" alt=""></label>
+				<label for="select3"><img src="images/duffle01-3.jpg" alt=""></label>
+				
+			</div>
+			<div class="row2_txt">
+				<h2 style='font-family:zonapro-bold;'>D16001</style></h2>
+				<p style='font-family:zonapro-thin;'>18,000 N.T</style></p>
+				<p>淺茶色</p>
+				<p>橋和釦具</p></p>
+				<p>皮革名牌套</p>
+				<p>天然染劑上色</p>
+				<p>5/30上蠟麻線</p>
+				<p>A+級植物鞣牛皮</p>
+				<p>nickson純銅拉鍊</p>
+				<p>21" x11.5" x9" -6</p>
+				<p class="share">分享:
+					<a href="http://facebook.com" target="_blank"><i class="fa fa-facebook-official"></i></a>
+					<a href="http://google.com" target="_blank"><i class="fa fa-google-plus"></i></a>
+					<a href="http://twitter.com" target="_blank"><i class="fa fa-twitter"></i></a>
+					<a href="http://instagram.com" target="_blank"><i class="fa fa-instagram"></i></a>
+				</p>
+			</div>
+		</div>
+
+
+		<div class="row3 clearfix">
+			<div class="row3row clearfix">
+				<div class="nail clearfix">
+					<div class="nail_img"><img src="images/duffle_info01-3.jpg" alt=""></div>
+					<div class="nail_txt">
+						<h2>內袋設計</h2>
+						<p>重要物品安全不露白</p>
+					</div>
+				</div>
+				<div class="nail clearfix">
+					<div class="nail_img"><img src="images/duffle_info01-2.jpg" alt=""></div>
+					<div class="nail_txt">
+						<h2>加厚提把及背帶</h2>
+						<p>裝再多行李都舒適</p>
+					</div>
+				</div>
+			</div>
+			<div class="row3row clearfix">
+				<div class="nail clearfix">
+					<div class="nail_img"><img src="images/duffle_info01-4.jpg" alt=""></div>
+					<div class="nail_txt">
+						<h2>大容量</h2>
+						<p>一次打包必備行李</p>
+					</div>
+				</div>
+				<div class="nail clearfix">
+					<div class="nail_img"><img src="images/duffle_info01-1.jpg" alt=""></div>
+					<div class="nail_txt">
+						<h2>側邊口袋</h2>
+						<p>收納旅行小物最方便</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer clearfix">
+			<div class="footer_bag">
+				<ul>
+					<li><a href="duffles.html">行李袋</a></li>
+					<li><a href="totes.html">托特包</a></li>
+					<li><a href="messenger.html">公事包</a></li>
+					<li><a href="backpacks.html">後背包</a></li>
+				</ul>
+			</div>
+			
+			<div class="footer_info">
+				<ul>
+					<li><a href="contact.html">聯絡我們</a></li>
+					<li><a href="about.html">品牌特色</a></li>
+					<li><a href="service.html">售後服務</a></li>
+					<li><a href="index.html">最新消息</a></li>
+				</ul>
+			</div>
+
+			<div class="social">
+				<p>社群連結</p>
+				<ul>
+				<li><a href="http://facebook.com" target="_blank"><img src="images/facebook.png" alt=""></a></li>
+					<li><a href="http://twitter.com" target="_blank"><img src="images/twitter.png" alt=""></a></li>
+					<li><a href="http://google.com" target="_blank"><img src="images/google.png" alt=""></a></li>
+					<li><a href="http://instagram.com" target="_blank"><img src="images/ig.png" alt=""></a></li>
+				</ul>
+			</div>
+			<p class="copy_right">Copyright © XXX Design | Hosted by XXX</p>
+		</div>
+
+	</div>
+
+	
+</body>
+</html>

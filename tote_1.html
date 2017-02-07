@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="menuNfooter.css">
+	<title>product</title>
+	<style>
+		body, html{
+			width: 100%;
+			height: 100%;
+		}
+		.contain{
+			width: 100%;
+			height: 100%;
+			max-width:960px;
+			margin: auto;
+			position:relative;
+		}
+		.clearfix{}
+		.clearfix:after, .clearfix:before{
+			content:'';
+			clear:both;
+			width: 100%;
+			height: 0;
+			display:block;
+		}
+
+		.row1{
+			width: 100%;
+			position:relative;
+			background: #fff;
+			padding-top: 4%;
+		}
+		.row1 h2{
+			position:relative;
+			color:#714327;
+		}
+		.row1 h2:nth-of-type(1){
+			margin-bottom:4% ;
+		}
+		.row1:after{
+			content:'';
+			clear:both;
+			width: 85%;
+			height: 2px;
+			display:block;
+			margin: auto;
+			background: #ddd;
+			position:relative;
+			bottom: 90px;
+			z-index:1;
+
+		}
+
+		.row1_img{
+			position:relative;
+			width:30%;
+			float:right;
+			right: 0%;
+			margin: 8% 0;
+			z-index:10;
+
+		}
+		.row1_txt{
+			position:relative;
+			width: 60%;
+			float:left;
+			padding: 16% 0;
+			left: 10%;
+			box-sizing:border-box;
+			text-align:center;
+
+		}
+		.row1_img img{
+			width: 70%;
+			height: 70%;
+		}
+		.row2{
+			width: 100%;
+			position:relative;
+			background: #eee;
+			padding: 4% 0 ;
+		}
+		
+		.pd1, .pd2{
+			position:relative;
+			width: 90%;
+			margin: 3% auto;
+			padding-left: 4%;
+			}
+
+		.pd1 div, .pd2 div{
+			float:left;
+			width: 30%;
+			padding: 5% 5% 5% 5%;
+			box-sizing:border-box;
+			border:1px solid #aaa;
+			margin: 0 1%;
+			
+		}
+		.pd1 p, .pd2 p{
+			text-align:center;
+			font-size:10px;
+		}
+		.row2 img{
+			width: 100%;
+			height: 100%;			
+		}
+		.pd1 div:hover, .pd2 div:hover{
+			border:none;
+			background: #cba;
+			transition:.5s;
+		}
+		.row2 h2{
+			position:absolute;
+			width: 20%;
+			top: -3%;
+			left: 6%;
+			background: #3f3d51;
+			text-align:center;
+			color:#eee;
+			font-size:22px;
+			padding: 6px 0;
+		}
+		.row2 h2:before{
+			content:'';
+			display:block;
+			position:absolute;
+			width: 5%;
+			top: 0;
+			height: 0px;
+			border-left: 10px solid transparent;
+			border-top: 21px solid #3f3d51;
+			border-bottom: 21px solid #3f3d51; 
+			left: -10%;
+		}
+		.row2 p{
+			font-family:zonapro-bold;
+			color:#555;
+		}
+		iframe{
+			width: 100%;
+			height:  42.3999%;
+		}
+		@media (max-width:767px){
+			.contain{
+				width: 100%;
+			}
+			.row1{
+				margin-bottom:  4%;
+			}
+			.row1_txt{
+				padding: 16% 0;
+				left: 5%;
+				width: 65%;
+			}
+			.row1_txt h2{
+				font-size:14px;
+
+			}
+			.row1:after{
+				bottom:45px;
+			}
+			.row2 h2{
+				width: 40%;
+				left: 30%;
+				right: 30%;
+				top: -7%;	
+				font-size:15px;
+			}
+			.row2 h2:before{
+				left: -13%;
+				width: 10%;
+				border-right: 10px solid transparent;
+				border-top: 16px solid #3f3d51;
+				border-bottom: 16px solid #3f3d51;
+
+			}
+			.row2 h2:after{
+				content:'';
+				display:block;
+				position:absolute;
+				width: 10%;
+				top: 0;
+				height: 0px;
+				border-right: 10px solid transparent;
+				border-top: 16px solid #3f3d51;
+				border-bottom: 16px solid #3f3d51;
+				right: -13%;
+			}
+			iframe{
+				width: 100%;
+				height:  auto;
+			}
+		}
+
+		@media (min-width:768px){
+			.contain{
+				width: 100%;
+			}
+		}
+		@media (min-width:1024px){
+			.contain{
+				width: 100%;
+				max-width:960px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="contain">
+		<div class="empty"></div>
+		<input type="checkbox" name="" id="menu-btn">
+		<div class="header">
+			<div class="logo"><a href="index.html"><img src="images/logo.png" alt=""></a></div>
+			<div class="hb"><label for="menu-btn"><i class="fa fa-bars"></i></label></div>
+			<ul class="menu_bag">
+				<li><a href="duffles.html">行李袋</a></li>
+				<li class="nowAt"><a href="totes.html">托特包</a></li>
+				<li><a href="messenger.html">公事包</a></li>
+				<li><a href="backpacks.html">後背包</a></li>
+				<li><a href="about.html">品牌特色</a></li>
+				<li><a href="contact.html">聯絡我們</a></li>
+			</ul>
+			<ul class="menu_info">
+				<li><a href="about.html">品牌特色</a></li>
+				<li><a href="contact.html">聯絡我們</a></li>
+			</ul>
+			<div class="orangebar"></div>
+		</div>
+			<div class="row1 clearfix">
+				<div class="row1_txt ">
+					<h2>皮革質感打造成熟男性魅力，</h2>
+					<h2>長途旅遊的最佳選擇。</h2>
+				</div>
+				<div class="row1_img "><img src="images/duffles_man.png" alt=""></div>
+			</div>
+
+
+		<div class="row2 clearfix">
+			<h2>所有行李袋</h2>
+			
+			<div class="pd1 clearfix">
+				<div>
+					<a href="duffle_1.html">
+						<img src="images/duffles_1.png">
+						<p>D15001</p>
+					</a>
+				</div>
+				<div>
+					<a href="duffle_1.html">
+						<img src="images/duffles_1.png">
+						<p>D15002</p>
+					</a>
+				</div>
+				<div>
+					<a href="duffle_1.html">
+						<img src="images/duffles_1.png">
+						<p>D15003</p>
+					</a>
+				</div>
+			</div>
+			<div class="pd2 clearfix">
+				<div>
+					<a href="duffle_1.html">
+						<img src="images/duffles_1.png">
+						<p>D15004</p>
+					</a>
+				</div>
+				<div>
+					<a href="duffle_1.html">
+						<img src="images/duffles_1.png">
+						<p>D15005</p>
+					</a>
+				</div>
+				<div>
+					<a href="duffle_1.html">
+						<img src="images/duffles_1.png">
+						<p>D15006</p>
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<iframe src="https://player.vimeo.com/video/78556392" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+		
+
+		<div class="footer clearfix">
+			<div class="footer_bag">
+				<ul>
+					<li><a href="duffles.html">行李袋</a></li>
+					<li><a href="totes.html">托特包</a></li>
+					<li><a href="messenger.html">公事包</a></li>
+					<li><a href="backpacks.html">後背包</a></li>
+				</ul>
+			</div>
+			
+			<div class="footer_info">
+				<ul>
+					<li><a href="contact.html">聯絡我們</a></li>
+					<li><a href="about.html">品牌特色</a></li>
+					<li><a href="service.html">售後服務</a></li>
+					<li><a href="index.html">最新消息</a></li>
+				</ul>
+			</div>
+
+			<div class="social">
+				<p>社群連結</p>
+				<ul>
+					<li><a href="http://facebook.com" target="_blank"><img src="images/facebook.png" alt=""></a></li>
+					<li><a href="http://twitter.com" target="_blank"><img src="images/twitter.png" alt=""></a></li>
+					<li><a href="http://google.com" target="_blank"><img src="images/google.png" alt=""></a></li>
+					<li><a href="http://instagram.com" target="_blank"><img src="images/ig.png" alt=""></a></li>
+				</ul>
+			</div>
+			<p class="copy_right">Copyright © XXX Design | Hosted by XXX</p>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="menuNfooter.css">
+	<title>Wandering service</title>
+	<style>
+		
+		.row1{
+			width: 100%;
+		}
+		.row1:after{
+			content:'';
+			position:relative;
+			display:block;
+			width: 85%;
+			height: 2px;
+			background: #ddd;
+			margin: auto;
+			bottom:63px;
+			z-index:1;
+		}
+		.row1 div{
+			float:left;
+		}
+		.row1_txt{
+			position:absolute;
+			width: 70%;
+			margin: 20% 0%  0%  18%;
+		}
+		.row1_txt h2{
+			font-size:28px;
+			color:#714327;
+		}
+		.row1_txt h2:last-child{
+			margin-top: 5%;
+			margin-left: 10%;
+		}
+		.row1_img{
+			position:relative;
+			width: 30%;
+			left: 60%;
+			margin: 24%  0 5% 0;
+			z-index:5;
+		}
+		.row1_img img{
+			position:relative;
+			width: 100%;
+			float:left;
+			bottom:;
+		}
+		.row2, .row4{
+			width: 100%;
+			position:relative;
+		}
+		.row2 h2, .row4 h2, .row3 h2{
+			text-align:center;
+			margin-bottom: 5%;
+			color:#033;
+		}
+		.row2 p, .row4 p, .row3 p{
+			color:#555;
+		}
+		.row2 div, .row4 div{
+			float:left;
+		}
+		.row2_img, .row4_img{
+			width: 45%;
+			margin-left: 5%;
+			padding: 5% ;
+			box-sizing:border-box;
+		}
+		.row2_img img, .row4_img img{
+			width: 100%;
+		}
+		.row2_txt, .row4_txt{
+			width: 50%;
+			padding: 15% 10% 5% 0%;
+			box-sizing:border-box;
+		}
+		.row3:before, .row4:before{
+			content:'';
+			width: 65%;
+			position:relative;
+			height: 2px;
+			background: #eee;
+			margin: auto;
+
+		}
+		.row3_img{
+			float:right;
+			width: 45%;
+			margin-right: 5%;
+			padding: 5% ;
+			box-sizing:border-box;
+		}
+		.row3_img img{
+			width: 100%;
+		}
+		.row3_txt{
+			width: 50%;
+			padding: 15% 0% 5% 10%;
+			box-sizing:border-box;
+		}
+
+
+
+		@media (max-width: 767px){
+			.row1_txt h2{
+				font-size:14px;
+				color:#714327;
+			}
+			.row1_txt{
+				position:absolute;
+				width: 70%;
+				left: -2%;
+			}
+			.row1:after{
+				height: 2px;
+				bottom:29px;
+				z-index:1;
+			}
+			.row2, .row3, .row4{
+				padding-bottom: 5%;
+			}
+			.row2 .row2_txt, .row3_txt, .row4 .row4_txt{
+				padding: 3% 0% 0 0%;
+				margin: auto;
+				width: 85%;
+				float:none;
+			}
+			.row2 .row2_img, .row3_img, .row4 .row4_img{
+				padding: 10% 5% 0% 5%;
+				margin: 0 auto;
+				width: 50%;
+				float:none;
+			}
+			.row2_txt h2, .row3_txt h2, .row4_txt h2{
+				width: 85%;
+				margin: auto;
+				padding-bottom: 2%;
+			}
+			.row2_txt p, .row3_txt p, .row4_txt p{
+				width: 80%;
+				margin: auto;
+				padding: 0;
+			}
+			.row3:before, .row4:before{
+				
+			}
+
+		}
+		@media (min-width: 768px){
+			.row2_txt, .row3_txt, .row4_txt{
+				padding-top: 10%;
+			}
+		}
+		@media (min-width: 1024px){
+			
+		}
+	</style>
+</head>
+<body>
+	<div class="contain">
+
+		<div class="empty"></div>
+		<input type="checkbox" name="" id="menu-btn">
+		<div class="header">
+			<div class="logo"><a href="index.html"><img src="images/logo.png" alt=""></a></div>
+			<div class="hb"><label for="menu-btn"><i class="fa fa-bars"></i></label></div>
+			<ul class="menu_bag">
+			<li><a href="duffles.html">行李袋</a></li>
+				<li><a href="totes.html">托特包</a></li>
+				<li><a href="messenger.html">公事包</a></li>
+				<li><a href="backpacks.html">後背包</a></li>
+				<li><a href="about.html">品牌特色</a></li>
+				<li><a href="contact.html">聯絡我們</a></li>
+			</ul>
+			<ul class="menu_info">
+				<li><a href="about.html">品牌特色</a></li>
+				<li><a href="contact.html">聯絡我們</a></li>
+			</ul>
+			<div class="orangebar"></div>
+		</div>
+
+		<div class="row1 clearfix">	
+			<div class="row1_txt">
+				<h2>我們提供保養、清潔及維修服務,</h2>
+				<h2>讓你的皮包歷久彌新!</h2>
+			</div>
+			<div class="row1_img">
+				<img src="images/service_row1.png" alt="">
+			</div>
+		</div>
+
+
+		<div class="row2 clearfix">
+			<div class="row2_img">
+				<img src="images/service_row2.jpg" alt="">
+			</div>
+			<div class="row2_txt">
+				<h2>皮面清潔</h2>
+				<p>皮面如受到汙損，請盡可能在短時間內進行清潔，污漬長時間停留於皮面將會變得難以清除。
+					<br>清潔時以棉布沾取適量皮革保養油，以畫圓方式在皮面輕推，至污漬淡化。
+				</p>
+			</div>
+		</div>
+
+		<div class="row3 clearfix">
+			<div class="row3_img">
+				<img src="images/service_row3.jpg" alt="">
+			</div>
+			<div class="row3_txt">
+				<h2>皮革保養</h2>
+				<p>定期對皮革進行保養可以讓皮革更加光亮，也能夠產生更多的色澤變化，更能夠增添皮革內的油脂，防止皮革龜裂。
+					<br>保養時以棉布沾取適量皮革保養油，以畫圓方式在皮面輕推，均勻塗抹於皮革上。
+				</p>
+			</div>
+		</div>
+
+		<div class="row4 clearfix">
+			<div class="row4_img">
+				<img src="images/service_row4.jpg" alt="">
+			</div>
+			<div class="row4_txt">
+				<h2>維修服務</h2>
+				<p>我們的各項產品均享有終生保固，保固內容為五金零件及線材，如需進行維修服務請先預約。
+					<br>詳細內容以店內公告為準，Wandering保有變更權力。
+				</p>
+			</div>
+		</div>
+		
+
+		<div class="footer clearfix">
+			<div class="footer_bag">
+				<ul>
+					<li><a href="duffles.html">行李袋</a></li>
+					<li><a href="totes.html">托特包</a></li>
+					<li><a href="messenger.html">公事包</a></li>
+					<li><a href="backpacks.html">後背包</a></li>
+				</ul>
+			</div>
+			
+			<div class="footer_info">
+				<ul>
+					<li><a href="contact.html">聯絡我們</a></li>
+					<li><a href="about.html">品牌特色</a></li>
+					<li><a href="service.html">售後服務</a></li>
+					<li><a href="index.html">最新消息</a></li>
+				</ul>
+			</div>
+
+			<div class="social">
+				<p>社群連結</p>
+				<ul>
+					<li><a href="http://facebook.com" target="_blank"><img src="images/facebook.png" alt=""></a></li>
+					<li><a href="http://twitter.com" target="_blank"><img src="images/twitter.png" alt=""></a></li>
+					<li><a href="http://google.com" target="_blank"><img src="images/google.png" alt=""></a></li>
+					<li><a href="http://instagram.com" target="_blank"><img src="images/ig.png" alt=""></a></li>
+				</ul>
+			</div>
+			<p class="copy_right">Copyright © XXX Design | Hosted by XXX</p>
+		</div>
+	</div>
+</body>
+</html>
